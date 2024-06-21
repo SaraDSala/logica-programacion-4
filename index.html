@@ -5,33 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/png" href="imagenes/factorial.png" />
-    <title> Factorial de un número </title>
+    <link rel="icon" type="image/png" href="imagenes/fibonacci.png" />
+    <title> Sucesión de Fibonacci </title>
   </head>
 
   <body>
     <div class="contenedor-principal">
       <div class="title">
-      <h1> FACTORIAL DE UN NÚMERO </h1>
+      <h1> SUCESIÓN DE FIBONACCI </h1>
       </div>
       <!-- Ingreso de la temperatura a convertir con su unidad -->
       <div class="contenedor-interno">
         <div class="contenedor">
-          <label for="numeroFactorial"> Ingrese el número para calcular su factorial:</label>
+          <label for="numeroSerie"> Ingrese la cantidad de términos que desea ver de la serie:</label>
           <input 
-          id="numeroFactorial" 
+          id="numeroSerie" 
           type="number" 
           value="23" 
           step="1" />
         </div>
         <!-- Conversión de temperatura, el código se añade por js-->
         
-        <div class="contenedor-factorial">
+        <div class="contenedor-serie">
           <div class="contenedor-respuesta"></div>
-          <div id="factorial">
+          <div id="serie">
           </div>
         </div>
     </div>
+  </div>
     <script src="app.js"></script>
   </body>
 </html>

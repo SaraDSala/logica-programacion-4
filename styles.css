@@ -13,88 +13,107 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   text-align: center;
-  background-color: rgb(36, 32, 32);
+  background:url(imagenes/fibonacci-wallpaper.jpg) no-repeat center;
 }
 
 h2{
-  color:rgb(204, 0, 255);
-  font-size: 2rem;
+  color:rgb(255, 102, 0);
+  font-size: 1.6rem;
+  font-weight: 500;
   padding-bottom: 10px;
+  width: 80%;
 }
 
 /* CONTENEDORES */
 
 .contenedor-principal {
+  margin-left: 50px;
   display: flex;
-  max-width: 80%;
+  height: 80%;
+  max-width: 50%;
   flex-wrap: wrap;  
-  text-align: center;
+  align-items: start;
   justify-content: center;
   background-color: aliceblue;
-  border-radius: 50px;
+  opacity: 0.8;
+  border:2px solid black
+
 }
 
 .contenedor-principal .title{
   width: 100%;
   font-size: 1.3rem;
-  background-color: rgba(150, 105, 180, 0.858);
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: rgba(255, 102, 0, 0.551);
   padding: 50px;
 }
 
-/* Estilo ingreso temperatura */
+.contenedor-interno{
+  width: 100%;
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo ingreso numero*/
 .contenedor {
-  width: fit-content;
+  width: 80%;
   padding: 20px;
   margin: 10px;
-  display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  font-size: 2rem;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .contenedor input{
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   max-width:17%;
   margin:20px;
   height: 50px;
 }
 
 .contenedor label{
-  text-align: center;
-  font-size: 2rem;
-  padding-left: 5px;
+  padding: 0px 20px;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
 
 /*Estilo visualizacion conversion */
-.contenedor-factorial{
+.contenedor-serie{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-  font-size: 2rem;
+  text-align:center;
+  font-size: 1.6rem;
   margin-bottom: 30px;
 }
 
-#factorial{
-  border: 3px solid rgb(204, 0, 255);
-  background-color:rgba(247, 215, 255, 0.817) ;
+.contenedor-respuesta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#serie{
+  width: 80%;
+  margin: 5px;
+  border: 3px solid rgb(255, 102, 0);
+  background-color:rgba(255, 102, 0, 0.551) ;
   padding: 10px;
 }
 
-/* Cuando se ingresa un número invalido */
-.error{
-display: none;
-}
+
 
 
 
